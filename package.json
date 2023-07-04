@@ -1,0 +1,31 @@
+{
+  "name": "strapi-web-hook",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.4.0",
+    "body-parser": "^1.20.2",
+    "cheerio": "^1.0.0-rc.12",
+    "child_process": "^1.0.2",
+    "chokidar": "^3.5.3",
+    "dotenv": "^16.1.4",
+    "express": "^4.18.2",
+    "form-data": "^4.0.0",
+    "formdata": "^0.10.4",
+    "fs": "^0.0.1-security",
+    "googleapis": "^118.0.0",
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^3.4.1",
+    "node-cron": "^3.0.2",
+    "nodemon": "^2.0.22",
+    "puppeteer": "^20.4.0",
+    "strapi-sdk-javascript": "^0.3.3"
+  }
+}

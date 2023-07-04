@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Tax Summary Report for the AY 2023-24</title>
+  <style>
+    /* Add your CSS styles here */
+    .summary-container {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      width: 90%;
+    }
+
+    .invoice-header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .invoice-body {
+      margin-bottom: 20px;
+    }
+
+    .invoice-footer {
+      text-align: center;
+    }
+
+    table {
+      border-collapse: collapse !important;
+      width: 100% !important;
+      border-top: 1px solid #444343 !important;
+      border-right: 1px solid #444343 !important;
+      padding-right: 10px !important; 
+    }
+
+    th,
+    td {
+      text-align: left;
+      padding: 8px;
+      border-bottom: 1px solid #373535;
+      border-right: 1px solid #444343 !important;
+      border-left: 1px solid #444343;
+
+    }
+
+    th {
+      text-align: center;
+      background-color: #ABBFDE !important;
+      border-top: 1px solid #444343 !important;
+      font-size: 20px;
+      font-weight: 500;
+    }
+
+    p {
+      padding: 0%;
+      margin: 0px;
+      background-color: transparent;
+
+
+    }
+
+    span {
+      padding: 0%;
+      margin: 0%;
+
+    }
+  </style>
+</head>
+
+<body style="display: flex; align-items: center; flex-direction: column;justify-content: center; ">
+  
+  
+  <div class="summary-container">
+    <nav style="display: flex; flex-direction: row;justify-content: space-between; ">
+      <img src="https://vider.in/images/tax-report-vider.jpg" style="width: 15%; padding-left: 5%;" />
+      <p style="padding-top: 15px; font-weight: 700; padding-right: 20px;">Report Generated on: <span id="date" style="font-weight: 500;"></span></p>
+    </nav>
+    
+    <div style="display: flex; align-items: center; flex-direction: row;justify-content: center; ">
+      <img src="https://vider.in/images/tax-report-prismN.jpg" style="width: 35%; padding: 5px;" />
+    </div>
+
+    <div style="display: flex; align-items: center; flex-direction: row;justify-content: center; ">
+      <img src="https://vider.in/images/tax-report-content.jpg" style="width: 80%;padding: 5px; " />
+    </div>
+    <div class="invoice-header">
+      <h1>Tax Summary Report for the AY 2023-24</h1>
+    </div>
+
+    <h2 style="text-align: center;">Part-I: General Information </h2>
+    <table>
+
+
+      <tr>
+        <th>Name</th>
+        <td colspan="5" id="name"></td>
+      </tr>
+      <tr>
+        <th>PAN</th>
+        <td id="pan"></td>
+        <th>Current Status of PAN</th>
+        <td id="panStatus"></td>
+
+      </tr>
+      <tr>
+        <th>Category</th>
+        <td colspan="5" id="status"></td>
+
+      </tr>
+      <tr>
+        <th>Address</th>
+        <td colspan="5" id="address"></td>
+      </tr>
+      <tr>
+        <th>DOB</th>
+        <td id="dob"></td>
+        <th>Aadhar Number</th>
+        <td colspan="3" class="value-column" id="aadhaar"></td>
+      </tr>
+      <tr>
+        <th>Mobile Number</th>
+        <td id="mobile"></td>
+        <th>Email ID</th>
+        <td colspan="3" class="value-column" id="email"></td>
+      </tr>
+      <tr>
+        <th>AY</th>
+        <td id="ay">2023-24</td>
+        <th>PY/FY</th>
+        <td colspan="3" class="value-column" id="py">2022-23</td>
+      </tr>
+
+    </table>
+
+    <h2 style="text-align: center;">Part-II: Income Summary </h2>
+    <table id="income-table-1">
+      <tr>
+        <th>S.No</th>
+        <th>Source of Income</th>
+        <th>Amount ( <img style="height: 12px;" src="https://vider.in/images/tax-report-rupee1.png"/> ) </th>
+        <th>TDS ( <img style="height: 12px;" src="https://vider.in/images/tax-report-rupee1.png"/> ) </th>
+      </tr>
+    </table>
+    <div>
+      <p style="padding-top: 3PX;"><span style="color: rgb(211, 87, 87); font-weight: 600;">* Note:</span> Some of the entries contain a combination of 2 or more heads of income, these incomes are to be segregated to the proper head of income based on the intention of the Tax Payer.</p>
+    </div>
+
+
+    <h2 style="text-align: center;">Part-III: Expenditure Summary</h2>
+    <table id="income-table-6">
+      <tr>
+        <th>S.No</th>
+        <th>Source of Expenditure</th>
+        <th>Amount <span>(<img style="height: 12px;" src="https://vider.in/images/tax-report-rupee1.png"/>)</span> </th>
+        <th>TDS|TCS ( <img style="height: 12px;" src="https://vider.in/images/tax-report-rupee1.png"/> ) </th>
+      </tr>
+    </table>
+    <div>
+      <p style="padding-top: 3PX;"><span style="color: rgb(211, 87, 87); font-weight: 600;">* Note:</span> Some of the entries contain a combination of 2 or more heads of expenditure, these expenditure are to be segregated to the proper head of expenditure based on the intention of the Tax Payer.</p>
+    </div>
+    
+    <!-- <h2 style="text-align: center;">Part-IV: Information as per TIS* | AIS**</h2>
+    <table id="income-table-12">
+      <tr>
+        <th>S.No</th>
+        <th>Information Description</th>
+        <th>Reported Value ( <img style="height: 12px;" src="https://vider.in/images/tax-report-rupee1.png"/> )
+
+        </th>
+      </tr>
+    </table> -->
+
+    <h2 style="text-align: center;">Part-IV: Information as per TIS* | AIS**</h2>
+    <table id="income-table-4">
+      <tr>
+        <th>S.No</th>
+        <th>Information Category</th>
+        <th>Derived Value ( <img style="height: 12px;" src="https://vider.in/images/tax-report-rupee1.png"/> )
+
+        </th>
+      </tr>
+    </table>
+
+    <div style="text-align: start;">
+      <p style="padding-top: 10px;">*TIS – Tax Information Summary</p>
+      <p style="padding-top: 10px;">**AIS – Annual Information Statement</p>
+    </div>
+
+    <h2 style="text-align: center;">Part-V: Information relating to Payment of Taxes</h2>
+    <div id="ais-first-details" style="border-right: #373535;">
+
+    </div>
+    <h2 style="text-align: center;">Part-VI: Information relating to Demand & Refund</h2>
+    <div id="ais-second-details">
+    </div>
+
+    <h2 style="text-align: center; color: #4f92f5;">Objectives of AIS and TIS</h2>
+    <ul>
+      <li style="list-style-type: circle;">Displaying complete information to the taxpayer, promoting voluntary
+        compliance, and
+        ensuring seamless prefilling of tax returns.</li>
+      <li style="list-style-type: circle;">Providing taxpayers with the opportunity to provide feedback on the
+        information
+        displayed in AIS and TIS.</li>
+      <li style="list-style-type: circle;">
+        Enabling the deduction of accurate and relevant information to deter non-compliance.
+      </li>
+      <li style="list-style-type: circle;"> Facilitating efficient tax reporting and reducing the burden on taxpayers.
+      </li>
+    </ul>
+    <div>
+      <img style="width: 100%;" src="https://vider.in/images/tax-report-work-flow.jpg" />
+    </div>
+    <div>
+      <img style="width: 100%;" src="https://vider.in/images/tax-report-deadlines.jpg" />
+    </div>
+
+    <h2 style="text-align: center; color: #4f92f5;">Disclaimer</h2>
+    <ul>
+      <li style="list-style-type: disc;">The following tax summary report has been prepared based on the information
+        obtained
+        from the 26AS (Annual Tax Statement), AIS (Annual Information Statement), and TIS
+        (Tax Information Summary) available on the Income Tax website. It is important to note
+        that this report is provided for informational purposes only.</li>
+      <li style="list-style-type: disc;">While every effort has been made to ensure the accuracy and reliability of the
+        data used
+        in this report, we cannot guarantee its completeness or correctness. The information
+        presented in this report is based on the data available at the time of preparation and is
+        subject to change or update without notice. Therefore, we recommend verifying the
+        information with the official records.</li>
+
+      <li style="list-style-type: disc;">We disclaim any liability or responsibility for any errors, omissions, or
+        inaccuracies in this
+        report or for any actions taken based on its content. By using this tax summary report,
+        you acknowledge and agree that you assume all risks associated with its use and that
+        we shall not be held liable for any damages or loss arising from the use of this report.
+        Please note that this disclaimer applies to the tax summary report as a whole and to all
+        its contents, including any attachments or additional information provided.
+      </li>
+      <li style="list-style-type: disc;">
+        We are committed to ensuring the utmost security, protection, and confidentiality of
+        your data. Our robust measures are in place to safeguard your information against
+        unauthorized access or breaches.
+
+      </li>
+    </ul>
+
+</body>
+
+</div>
+</body>
+
+</html>

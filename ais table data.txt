@@ -1,0 +1,36 @@
+
+Table 18
+Row 1: SR.NO., IDENTIFICATION YEAR HEAD, HEAD, (A), (B), CESS (C), (D), (A+B+C+D), DEPOSIT, nan
+Row 2: nan, nan, nan, nan, nan, nan, nan, nan, nan, NUMBER (CIN)
+Row 3: 15/031, Income Tax 2023-24, Advance, 35,000, 0, 0, 0, 35,000, nan, 0013283150320235427
+Row 4: nan, Payment, Tax, nan, nan, nan, nan, nan, /2023, nan
+Row 5: 16/092, Income Tax 2023-24, Advance, 35,000, 0, 0, 0, 35,000, nan, 0013283160920225623
+Row 6: nan, Payment, Tax, nan, nan, nan, nan, nan, /2022, nan
+Row 7: 17/063, Income Tax 2023-24, Advance, 30,000, 0, 0, 0, 30,000, nan, 001328317062022310
+Row 8: nan, Payment, Tax, nan, nan, nan, nan, nan, /2022, nan
+Row 9: 19/104, Income Tax 2022-23, Self, 34,590, 0, 0, 0, 34,590, nan, 05103081910202211817
+Row 10: nan, Payment, Assessment, nan, nan, nan, nan, nan, /2022, nan
+
+inko table
+
+
+Table 9
+Row 1: nan, YEAR, HEAD, HEAD, nan, (B), CESS (C), (D), +B+C+D), DEPOSIT, IDENTIFICATION
+Row 2: nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, NUMBER (CIN)
+Row 3: 1.0, 2022-23, Income, Self, 73,860, 0, 0, 0, 73,860, 12/09/202, 6210013120920223198
+Row 4: nan, nan, Tax, Assessm, nan, nan, nan, nan, nan, 2, nan
+Row 5: nan, nan, Payment, ent, nan, nan, nan, nan, nan, nan, nan
+
+
+
+another table
+
+
+Row 1: DATE OF SR.NO. ASSESSMENT, MAJOR, MINOR, TAX, SURCHARGE, EDUCATION, OTHERS, TOTAL, nan, IDENTIFICATION
+Row 2: YEAR, HEAD, HEAD, (A), (B), CESS (C), (D), (A+B+C+D), DEPOSIT, nan
+Row 3: nan, nan, nan, nan, nan, nan, nan, nan, nan, NUMBER (CIN)
+Row 4: nan, Income Tax, Advance, nan, nan, nan, nan, nan, 15/03, nan
+Row 5: 1 2023-24, 0011349150320235574Payment, Tax, 35,000, 0, 0, 0, 35,000, /2023, nan
+Row 6: 16/092 2023-24, Income Tax 0014431160920225575Payment, Advance Tax, 35,000, 0, 0, 0, 35,000, /2022, nan
+Row 7: 17/063 2023-24, Income Tax 001134917062022371Payment, Advance Tax, 30,000, 0, 0, 0, 30,000, /2022, nan
+Row 8: 19/104 2022-23, Income Tax 05103081910202211894Payment, Self Assessment, 30,396, 0, 0, 0, 30,396, /2022, nan
